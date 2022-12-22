@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+
+    app:startDestination="@id/MainFragment">
+
+    <fragment
+        android:id="@+id/NewBookFragment"
+        android:name="com.example.myapplication.presentation.screens.add.NewBookFragment"
+        tools:layout="@layout/fragment_new_book">
+        <action
+            android:id="@+id/action_NewBookFragment_to_MainFragment"
+            app:destination="@id/MainFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.myapplication.presentation.screens.login.LoginFragment"
+
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_LoginFragment_to_MainFragment"
+            app:destination="@id/MainFragment"
+
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.example.myapplication.presentation.screens.main.MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_MainFragment_to_NewBookFragment"
+            app:destination="@id/NewBookFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_titulFragment"
+            app:destination="@id/titulFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_typeFragment"
+            app:destination="@id/typeFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_teacherFragment"
+            app:destination="@id/teacherFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/titulAddFragment"
+        android:name="com.example.myapplication.presentation.screens.titul.TitulAddFragment"
+        android:label="TitulAddFragment"
+        tools:layout="@layout/fragment_add_titul"/>
+    <fragment
+        android:id="@+id/titulFragment"
+        android:name="com.example.myapplication.presentation.screens.titul.TitulFragment"
+        android:label="TitulFragment"
+        tools:layout="@layout/fragment_scroll_titul">
+        <action
+            android:id="@+id/action_titulFragment_to_titulAddFragment"
+            app:destination="@id/titulAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teacherFragment"
+        android:name="com.example.myapplication.presentation.screens.teacher.TeacherFragment"
+        android:label="Преподаватели"
+        tools:layout="@layout/fragment_scroll_titul">
+        <action
+            android:id="@+id/action_teacherFragment_to_teacherAddFragment"
+            app:destination="@id/teacherAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teacherAddFragment"
+        android:name="com.example.myapplication.presentation.screens.teacher.TeacherAddFragment"
+        android:label="TeacherAddFragment"
+        tools:layout="@layout/fragment_add_teacher"/>
+    <fragment
+        android:id="@+id/bookTypeAddFragment"
+        android:name="com.example.myapplication.presentation.screens.type.BookTypeAddFragment"
+        android:label="BookTypeAddFragment"
+        tools:layout="@layout/fragment_add_book_type"/>
+    <fragment
+        android:id="@+id/typeFragment"
+        android:name="com.example.myapplication.presentation.screens.type.BookTypeFragment"
+        android:label="TypeFragment"
+        tools:layout="@layout/fragment_scroll_type">
+        <action
+            android:id="@+id/action_typeFragment_to_bookTypeAddFragment"
+            app:destination="@id/bookTypeAddFragment" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/md_theme_light_surfaceVariant"
+    app:cardUseCompatPadding="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            tools:text="Мобильная разработка"
+            android:padding="4dp"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/book_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Сборник статей"
+            android:textStyle="italic"
+            android:padding="4dp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/city_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Москва"
+            android:textStyle="italic"
+            android:padding="4dp"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/year_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="2020"
+            android:textStyle="italic"
+            android:padding="4dp"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/publisher_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Издательство"
+            android:textStyle="italic"
+            android:padding="4dp"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/teacher_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Преподаватель"
+            android:textStyle="italic"
+            android:padding="4dp"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/type_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Тип книги"
+            android:textStyle="italic"
+            android:padding="4dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>

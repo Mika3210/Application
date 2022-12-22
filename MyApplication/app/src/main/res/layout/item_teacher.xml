@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/md_theme_light_surfaceVariant"
+    app:cardUseCompatPadding="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            tools:text="ФИО"
+            android:padding="4dp"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/vyz_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="РТУ МИРЭА"
+            android:textStyle="italic"
+            android:padding="4dp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Магистр"
+            android:textStyle="italic"
+            android:padding="4dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.google.android.material.card.MaterialCardView>
